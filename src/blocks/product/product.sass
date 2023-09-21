@@ -1,0 +1,107 @@
+.product
+  background: url("../img/product/bg.webp") center center no-repeat
+  background-size: cover
+  background-color: $color-black-primary
+  padding: 58px 0 50px
+  &__container
+    @include glass(1304px)
+    display: grid
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr)
+    grid-gap: 54px
+  &__col
+    &:first-child
+      max-width: 680px
+      display: flex
+      justify-content: center
+      align-items: center
+      position: relative
+      &:before
+        content: ''
+        display: block
+        width: 100%
+        max-width: 680px
+        height: 100%
+        max-height: 686px
+        position: absolute
+        left: 50%
+        top: 50%
+        z-index: 2
+        transform: translate3d(-50%, -50%, 0)
+        background: url("../img/product/glow.webp") center center no-repeat
+        background-size: cover
+    &:last-child
+      max-width: 632px
+  h2
+    font: 700 30px/1.2 $font-roboto-condensed
+    color: $color-blue-primary
+    text-transform: uppercase
+    margin: 0 0 42px
+    &:last-child
+      margin-bottom: 0
+  &__img
+    display: block
+    width: 100%
+    max-width: 441px
+    position: relative
+    z-index: 3
+    height: auto
+    &--small
+      width: 64px
+  &__btns
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    column-gap: 12px
+    margin: 0 0 4px
+    &:last-child
+      margin-bottom: 0
+  &__table
+    margin: 0 0 30px
+    border-collapse: separate
+    border-spacing: 0 6px
+    &:last-child
+      margin-bottom: 0
+  //tbody
+  //tr
+  td
+    padding-top: 6px
+    padding-bottom: 6px
+    border-radius: 1px
+    border: 1px solid rgba(103, 29, 0, 0.48)
+    border-right: none
+    border-left: none
+    background: rgba(0, 0, 0, 0.55)
+    &:first-child
+      padding: 6px 14px 6px 6px
+      border-left: 1px solid rgba(103, 29, 0, 0.48)
+      width: 76px
+    &:nth-child(2)
+      width: 305px
+      padding: 6px 76px 6px 6px
+    &:nth-child(3)
+      text-align: center
+    &:last-child
+      text-align: center
+      border-right: 1px solid rgba(103, 29, 0, 0.48)
+  p
+    font: 400 16px/1.2 $font-roboto
+    color: $color-white-primary
+  &__card
+    display: grid
+    grid-template-columns: 178px auto
+    column-gap: 38px
+    img
+      width: 100%
+      display: block
+      height: auto
+    p
+      font: 400 50px/1.2 $font-roboto
+      color: $color-white-primary
+      margin: 0 0 10px
+  &__card-col
+    &:last-child
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      align-items: flex-start
+      padding: 0 0 30px

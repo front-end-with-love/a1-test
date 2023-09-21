@@ -1,0 +1,42 @@
+.cover
+  height: 100vh
+  position: relative
+  &__container
+    @include glass(1304px)
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    height: 100%
+    z-index: 3
+  &__elements
+    display: block
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    object-fit: cover
+    z-index: 2
+  h1
+    margin: 0 0 22px
+    font: 700 42px/1 $font-roboto-condensed
+    color: $color-white-primary
+    text-transform: uppercase
+  p
+    font: 400 20px/1.2 $font-roboto
+    color: $color-white-primary
+    margin: 0 0 64px
+  &__bg
+    display: block
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    object-fit: cover
+    z-index: 1
